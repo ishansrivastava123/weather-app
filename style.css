@@ -1,0 +1,162 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.5px;
+    width: 100%;
+    height: 100vh;
+    background: url("https://source.unsplash.com/1600x900/?landscape") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.window {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    background: #000;
+    width: 35%;
+    min-height: 100px;
+    color: white;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 35px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.top {
+    padding: 20px 0;
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+    background-color: #222;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    padding-right: 15px;
+    transition: all 0.3s linear;
+}
+
+input:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    border: 1px solid white;
+}
+
+input:focus::placeholder, input:hover::placeholder {
+    color: white;
+    font-weight: 500;
+}
+
+.fa {
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    border-radius: 50%;
+    line-height: 40px;
+    vertical-align: middle;
+    padding-top: 11px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    transition: all 0.3s linear;
+}
+
+.fa:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    border: 1px solid white;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 3rem;
+}
+
+h1 > * {
+    height: 100%;
+}
+
+.celcius {
+    font-size: 1.5rem;
+    vertical-align: super;
+}
+
+/* .city {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.space {
+    padding-bottom: 20px;
+}
+
+.country {
+    font-style: italic;
+}
+
+.separation {
+    width: 0px;
+    height: 30px;
+    border-left: 5px dotted white;
+}
+
+.weather {
+    display: flex;
+}
+
+img {
+    width: 60px;
+}
+
+.desc {
+    margin: auto 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.footer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer > * {
+    font-weight: 300;
+    margin: 20px auto;
+    margin-top: 10px;
+}
+
+.percent, .kmph {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
